@@ -35,7 +35,7 @@ namespace TestShape
         public void Triangle_Area_Correct()
         {
             var rect = new Triangle(3, 4, 5);
-            Assert.Equal(10, rect.Area());
+            Assert.Equal(6, rect.Area());
         }
         [Fact]
         public void Triangle_Perimetr_Correct()

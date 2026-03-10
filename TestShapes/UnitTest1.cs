@@ -31,6 +31,23 @@ namespace TestShape
         {
             Assert.Throws<ArgumentException>(() => new pract4_okfks.Rectangle(-2, 5));
         }
-        
+        [Fact]
+        public void Triangle_Area_Correct()
+        {
+            var rect = new Triangle(3, 4, 5);
+            Assert.Equal(10, rect.Area());
+        }
+        [Fact]
+        public void Triangle_Perimetr_Correct()
+        {
+            var rect = new Triangle(3, 4, 5);
+            Assert.Equal(12, rect.Perimeter());
+        }
+
+        [Fact]
+        public void Triangle_Inv_Data()
+        {
+            Assert.Throws<ArgumentException>(() => new Triangle(-1, -2, 5));
+        }
     }
 }
